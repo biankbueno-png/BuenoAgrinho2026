@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>EcoLavoura | Bianck</title>
+
+  <meta
+    name="description"
+    content="Projeto EcoLavoura: jogo educativo sobre sustentabilidade, agricultura, tecnologia e cuidado com o meio ambiente."
+  />
+
+  <meta
+    name="keywords"
+    content="agrinho, programação, sustentabilidade, agro, meio ambiente, html, css, javascript, EcoLavoura, Bianck"
+  />
+
+ <link rel="stylesheet" href="style.css?v=200" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <span class="logo-icone">🌱</span>
+
+      <div>
+        <h1>EcoLavoura</h1>
+        <p>Agro forte, futuro sustentável</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#programacao">Programação</a>
+      <a href="#jogo">Jogo</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#creditos">Créditos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <div id="seloAgrinho">Projeto Agrinho 2026 | Programação</div>
+
+        <h2>Proteja a lavoura e ajude o planeta</h2>
+
+        <p>
+          O EcoLavoura é um jogo educativo criado para mostrar que o campo pode
+          produzir alimentos e, ao mesmo tempo, preservar a água, o solo, as plantas
+          e os animais.
+        </p>
+
+        <div class="botoes-hero">
+          <a href="#jogo" class="botao principal">Jogar agora</a>
+          <a href="#sobre" class="botao secundario">Conhecer o projeto</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="campo-visual">
+          <span>☀️</span>
+          <span>🌽</span>
+          <span>🌱</span>
+          <span>💧</span>
+          <span>🐝</span>
+        </div>
+
+        <h3>Missão do jogador</h3>
+
+        <p>
+          Recolher itens sustentáveis, proteger a plantação e evitar elementos
+          que prejudicam a saúde da lavoura.
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao">
+      <div class="titulo-secao">
+        <p>Educação ambiental</p>
+        <h2>Sobre o projeto</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icone-card">🌾</div>
+          <h3>Campo produtivo</h3>
+          <p>
+            O projeto mostra a importância da agricultura para a alimentação,
+            para a economia e para a vida das pessoas.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icone-card">♻️</div>
+          <h3>Sustentabilidade</h3>
+          <p>
+            O jogo incentiva atitudes como reciclagem, preservação da água,
+            cuidado com o solo e proteção da biodiversidade.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icone-card">💻</div>
+          <h3>Tecnologia</h3>
+          <p>
+            HTML, CSS e JavaScript foram utilizados para transformar o tema
+            ambiental em uma experiência interativa.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="programacao" class="secao programacao">
+      <div class="titulo-secao">
+        <p>Lógica do projeto</p>
+        <h2>Como o projeto foi programado</h2>
+      </div>
+
+      <div class="programacao-box">
+        <p>
+          O projeto utiliza HTML para organizar o conteúdo, CSS para criar o visual
+          e JavaScript para controlar o jogo, o quiz, a pontuação, o tempo e a saúde
+          da lavoura.
+        </p>
+
+        <ul>
+          <li>Variáveis para controlar pontuação, tempo e saúde da lavoura.</li>
+          <li>Funções para iniciar, reiniciar e finalizar o jogo.</li>
+          <li>Eventos de clique, teclado, mouse e toque na tela.</li>
+          <li>Canvas para desenhar o cenário, o jogador e os itens.</li>
+          <li>Colisão entre o carrinho ecológico e os itens que caem.</li>
+          <li>Quiz interativo com verificação de respostas.</li>
+          <li>Manipulação do DOM para atualizar textos e pontuações na tela.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao destaque">
+      <div class="titulo-secao">
+        <p>Como funciona</p>
+        <h2>Objetivo do jogo</h2>
+      </div>
+
+      <div class="grade-info">
+        <div class="info-box">
+          <h3>✅ Colete</h3>
+          <p>
+            Recolha itens positivos como reciclagem, água limpa, mudas e polinizadores.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>⚠️ Evite</h3>
+          <p>
+            Fuja de queimadas, veneno, produtos químicos e poluição que prejudicam a lavoura.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>🏆 Vença</h3>
+          <p>
+            Faça a maior pontuação possível antes que o tempo acabe e mantenha a saúde da lavoura.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="jogo" class="secao jogo-area">
+      <div class="titulo-secao">
+        <p>Jogo educativo</p>
+        <h2>EcoLavoura em ação</h2>
+      </div>
+
+      <div class="painel-jogo">
+        <div class="placar">
+          <div>
+            <span>Pontos</span>
+            <strong id="pontuacao">0</strong>
+          </div>
+
+          <div>
+            <span>Saúde da lavoura</span>
+            <strong id="saude">100</strong>
+          </div>
+
+          <div>
+            <span>Tempo</span>
+            <strong id="tempo">45</strong>
+          </div>
+        </div>
+
+        <div class="melhor-pontuacao">
+          <span>🏅 Melhor pontuação:</span>
+          <strong id="melhorPontuacao">0</strong>
+        </div>
+
+        <div class="instrucoes-box">
+          <h3>Como jogar</h3>
+
+          <p>
+            Use as setas do teclado, o mouse ou o toque na tela para mover o carrinho ecológico.
+          </p>
+
+          <p>
+            <strong>Colete:</strong> ♻️ reciclagem, 💧 água limpa, 🌱 muda e 🐝 polinizador.
+          </p>
+
+          <p>
+            <strong>Evite:</strong> 🔥 queimada, ☠️ veneno, 🧪 produto químico e 🛢️ poluição.
+          </p>
+        </div>
+
+        <canvas id="gameCanvas" width="900" height="450">
+          Seu navegador não suporta canvas.
+        </canvas>
+
+        <p id="mensagemJogo" class="mensagem-jogo">
+          Clique em iniciar para começar a proteger a lavoura.
+        </p>
+
+       <div class="controles">
+  <button id="btnIniciarJogo" type="button">Iniciar jogo</button>
+  <button id="btnPararJogo" type="button">Parar jogo</button>
+  <button id="btnReiniciarJogo" type="button">Reiniciar</button>
+</div>
+      </div>
+    </section>
+
+    <section id="quiz" class="secao quiz-area">
+      <div class="titulo-secao">
+        <p>Teste seus conhecimentos</p>
+        <h2>Quiz sustentável</h2>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-topo">
+          <span id="contadorPergunta">Pergunta 1 de 5</span>
+          <span id="pontuacaoQuiz">0 pontos</span>
+        </div>
+
+        <h3 id="perguntaQuiz">Clique em começar para responder o quiz.</h3>
+
+        <div id="alternativasQuiz" class="alternativas"></div>
+
+        <p id="resultadoQuiz" class="resultado-quiz"></p>
+
+        <button id="btnProximaPergunta" type="button">Começar quiz</button>
+      </div>
+    </section>
+
+    <section class="secao mensagem-autora">
+      <div class="titulo-secao">
+        <p>Mensagem do projeto</p>
+        <h2>Por que o EcoLavoura foi criado?</h2>
+      </div>
+
+      <div class="mensagem-box">
+        <p>
+          Com o EcoLavoura, eu quis mostrar que o campo pode ser produtivo e
+          sustentável ao mesmo tempo. Cuidar da água, preservar o solo, proteger
+          as abelhas e evitar a poluição são atitudes importantes para garantir
+          alimento, vida e futuro.
+        </p>
+
+        <p class="assinatura">— Bianck</p>
+      </div>
+    </section>
+
+    <section id="creditos" class="secao creditos">
+      <div class="titulo-secao">
+        <p>Finalização</p>
+        <h2>Créditos</h2>
+      </div>
+
+      <div class="creditos-box">
+        <p>
+          <strong>Projeto:</strong> EcoLavoura<br />
+          <strong>Tema:</strong> Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente<br />
+          <strong>Autora:</strong> Bianck<br />
+          <strong>Categoria:</strong> Programação Front-End<br />
+          <strong>Tecnologias:</strong> HTML, CSS e JavaScript<br />
+          <strong>Ferramentas:</strong> VS Code e GitHub Pages
+        </p>
+
+        <p>
+          Os elementos visuais principais foram criados com emojis e desenhos
+          feitos por código no canvas do JavaScript. O jogo foi organizado com
+          variáveis, funções, eventos, pontuação, tempo, colisão e quiz interativo.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>🌱 EcoLavoura — Cuidar do campo é proteger o futuro.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
